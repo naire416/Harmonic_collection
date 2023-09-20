@@ -1,0 +1,16 @@
+body {
+    background-color: #0039AA;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h3 {
+    color: whitesmoke;
+    font-weight: 200;
+    font-style: italic;
+}
+
+a {
+    color: whitesmoke;
+}
