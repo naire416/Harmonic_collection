@@ -9,6 +9,7 @@ h1 {
     color: whitesmoke;
     font-weight: 200;
     font-style: italic;
+    margin: 0px;
 }
 
 .text {
@@ -17,19 +18,36 @@ h1 {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 0px;
 }
 
-.list{
+p{
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.flex-container{
+    
     color: whitesmoke;
-    text-align: center;
+    text-align: left;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
-    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.items{
+    padding: 0px 40px 0px 40px;
+
 }
 
 a {
     color: whitesmoke;
+}
+
+img{
+    height: 400px;
 }
