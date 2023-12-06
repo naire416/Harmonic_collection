@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Lily</title>
+    <title>Amoeba</title>
+    <script src = "collection8.js" async></script>
 </head>
 
 <body>
@@ -15,51 +16,32 @@
             <a href="https://naire416.github.io/Harmonic_collection/collection9.html" id="next">next</a>
         </div>
     </header>
+
     <div class="stickydiv_1">
         <span id="stickybutton_1"></span>
-        <p id="stickytext_1" class="button_visibility">insert animation with audio hereinsert animation with audio hereinsert animation with audio here</p>
+        <p id="stickytext_1" class="button_visibility">Amoeba (plural = amoebae) is a well known genus of unicellular organism, a protist. One of its most common species, the Amoeba Proteus, is about 0.2 to 0.3 mm large. The amoeba was first discovered by August Von Rosenhof in 1757.</p>
     </div>
     <div class="stickydiv_2">
         <span id="stickybutton_2"></span>
-        <p id="stickytext_2" class="button_visibility">insert animation with audio hereinsert animation with audio hereinsert animation with audio here</p>
+        <p id="stickytext_2" class="button_visibility">The amoeba is a member of a whole group of amoeboid eukaryotic protists called Amoebozoa. They are heterotrophs, eating bacteria and other protists.</p>
     </div>
+
     <div class="animation">
         <!--insert animation with audio here-->
         <div class="audio">
-            <audio>
+        <footer>
+            <audio autoPlay>
                 <source
-                    src=""
+                    src="collection8.mp3"
                     type="audio/mpeg">
             </audio>
+            <button id="AudioPlay">
+                play
+            </button>
+            <input type="range" min="1" max="100" value="50" class="slider">
+        </footer>
         </div>
     </div>
-    <script>
-        const sticky_1=document.getElementById("stickybutton_1");
 
-        const sticky_2=document.getElementById("stickytext_1");
-
-        console.log(sticky_1)
-
-        sticky_1.addEventListener("click", popup)
-
-        function popup(){
-            sticky_2.classList.toggle("button_visibility")
-            console.log("this works!")
-        }
-    </script>
-    <script>
-        const sticky_3=document.getElementById("stickybutton_2");
-
-        const sticky_4=document.getElementById("stickytext_2");
-
-        console.log(sticky_3)
-
-        sticky_3.addEventListener("click", popup)
-
-        function popup(){
-            sticky_4.classList.toggle("button_visibility")
-            console.log("this works!")
-        }
-    </script>
 </body>
 </html>
