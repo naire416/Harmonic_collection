@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swan</title>
+    <script src = "collection7.js" async></script>
 </head>
 
 <body>
@@ -17,49 +18,27 @@
     </header>
     <div class="stickydiv_1">
         <span id="stickybutton_1"></span>
-        <p id="stickytext_1" class="button_visibility">insert animation with audio hereinsert animation with audio hereinsert animation with audio here</p>
+        <p id="stickytext_1" class="button_visibility">Swans are gracefully long-necked, heavy-bodied, big-footed birds that glide majestically when swimming and fly with slow wingbeats and with necks outstretched.</p>
     </div>
     <div class="stickydiv_2">
         <span id="stickybutton_2"></span>
-        <p id="stickytext_2" class="button_visibility">insert animation with audio hereinsert animation with audio hereinsert animation with audio here</p>
+        <p id="stickytext_2" class="button_visibility">A swan has often been seen as a symbol of wisdom and includes awakening the power of self, balance, grace, inner beauty, innocence, self-esteem, seeing into the future, understanding spiritual, evolution, developing intuitive abilities, grace in dealing with others and commitment.</p>
     </div>
     <div class="animation">
         <!--insert animation with audio here-->
         <div class="audio">
-            <audio>
+        <footer>
+            <audio autoPlay>
                 <source
-                    src=""
+                    src="grass_rustling.mp3"
                     type="audio/mpeg">
             </audio>
+            <button id="AudioPlay">
+                play
+            </button>
+            <input type="range" min="1" max="100" value="50" class="slider">
+        </footer>
         </div>
     </div>
-    <script>
-        const sticky_1=document.getElementById("stickybutton_1");
-
-        const sticky_2=document.getElementById("stickytext_1");
-
-        console.log(sticky_1)
-
-        sticky_1.addEventListener("click", popup)
-
-        function popup(){
-            sticky_2.classList.toggle("button_visibility")
-            console.log("this works!")
-        }
-    </script>
-    <script>
-        const sticky_3=document.getElementById("stickybutton_2");
-
-        const sticky_4=document.getElementById("stickytext_2");
-
-        console.log(sticky_3)
-
-        sticky_3.addEventListener("click", popup)
-
-        function popup(){
-            sticky_4.classList.toggle("button_visibility")
-            console.log("this works!")
-        }
-    </script>
 </body>
 </html>
