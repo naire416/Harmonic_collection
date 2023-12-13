@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duck</title>
+    <title>Spider web</title>
+    <script src = "collection9.js" async></script>
 </head>
 
 <body>
@@ -17,49 +18,29 @@
     </header>
     <div class="stickydiv_1">
         <span id="stickybutton_1"></span>
-        <p id="stickytext_1" class="button_visibility">insert animation with audio hereinsert animation with audio hereinsert animation with audio here</p>
+        <p id="stickytext_1" class="button_visibility">A spider web is a sticky net that spiders make from silk to trap their prey. When insects fly or crawl into the web, they get stuck and the spider eats them.</p>
     </div>
     <div class="stickydiv_2">
         <span id="stickybutton_2"></span>
-        <p id="stickytext_2" class="button_visibility">insert animation with audio hereinsert animation with audio hereinsert animation with audio here</p>
+        <p id="stickytext_2" class="button_visibility">Spiders have structures called spinnerets on their abdomen, usually on the underside to the rear. These are the silk-spinning organs. Different species have different numbers of spinnerets, but most have a cluster. At the end of each spinneret is a collection of spigots, nozzle-like structures. A single silk thread comes out of each.</p>
     </div>
+
     <div class="animation">
         <!--insert animation with audio here-->
         <div class="audio">
-            <audio>
+        <footer>
+            <audio autoPlay>
                 <source
-                    src=""
+                    src="collection9.mp3"
                     type="audio/mpeg">
             </audio>
+            <button id="AudioPlay">
+                play
+            </button>
+            <input type="range" min="1" max="100" value="50" class="slider">
+        </footer>
         </div>
     </div>
-    <script>
-        const sticky_1=document.getElementById("stickybutton_1");
-
-        const sticky_2=document.getElementById("stickytext_1");
-
-        console.log(sticky_1)
-
-        sticky_1.addEventListener("click", popup)
-
-        function popup(){
-            sticky_2.classList.toggle("button_visibility")
-            console.log("this works!")
-        }
-    </script>
-    <script>
-        const sticky_3=document.getElementById("stickybutton_2");
-
-        const sticky_4=document.getElementById("stickytext_2");
-
-        console.log(sticky_3)
-
-        sticky_3.addEventListener("click", popup)
-
-        function popup(){
-            sticky_4.classList.toggle("button_visibility")
-            console.log("this works!")
-        }
-    </script>
+    
 </body>
 </html>
