@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Chestnut</title>
+    <title>Cattail</title>
+    <script src = "collection2.js" async></script>
 </head>
 
 <body>
@@ -17,49 +18,28 @@
     </header>
     <div class="stickydiv_1">
         <span id="stickybutton_1"></span>
-        <p id="stickytext_1" class="button_visibility">insert animation with audio hereinsert animation with audio hereinsert animation with audio here</p>
+        <p id="stickytext_1" class="button_visibility">Cattail, are a species of tall reedy marsh plants, found mainly in temperate and cold regions of the Northern and Southern hemispheres.</p>
     </div>
     <div class="stickydiv_2">
         <span id="stickybutton_2"></span>
-        <p id="stickytext_2" class="button_visibility">insert animation with audio hereinsert animation with audio hereinsert animation with audio here</p>
+        <p id="stickytext_2" class="button_visibility">The plants inhabit fresh to slightly brackish waters and are considered aquatic or semi-aquatic. Cattails are important to wildlife, and many species are also cultivated ornamentally as pond plants and for dried-flower arrangements.</p>
     </div>
+
     <div class="animation">
         <!--insert animation with audio here-->
         <div class="audio">
-            <audio>
+        <footer>
+            <audio autoPlay>
                 <source
-                    src=""
+                    src="collection2.mp3"
                     type="audio/mpeg">
             </audio>
+            <button id="AudioPlay">
+                play
+            </button>
+            <input type="range" min="1" max="100" value="50" class="slider">
+        </footer>
         </div>
     </div>
-    <script>
-        const sticky_1=document.getElementById("stickybutton_1");
-
-        const sticky_2=document.getElementById("stickytext_1");
-
-        console.log(sticky_1)
-
-        sticky_1.addEventListener("click", popup)
-
-        function popup(){
-            sticky_2.classList.toggle("button_visibility")
-            console.log("this works!")
-        }
-    </script>
-    <script>
-        const sticky_3=document.getElementById("stickybutton_2");
-
-        const sticky_4=document.getElementById("stickytext_2");
-
-        console.log(sticky_3)
-
-        sticky_3.addEventListener("click", popup)
-
-        function popup(){
-            sticky_4.classList.toggle("button_visibility")
-            console.log("this works!")
-        }
-    </script>
 </body>
 </html>
